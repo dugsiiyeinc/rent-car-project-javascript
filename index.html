@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car rent </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rough-notation/0.5.1/rough-notation.cjs.js" referrerpolicy="no-referrer"></script> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class="brand-title">
+      <img class="logo" src="https://dugsiiye.com/white_green.png" alt="">
+    </div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      
+          <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="./ContactUs.html">Contact</a></li>
+              <li><a href="login.html">login</a></li>
+              <ul> <button> <li><a href="signup.html">Signup</a></li> </button></ul>
+             
+            
+              
+          </ul>
+        </div>
+      </nav>
+      
+  
+ 
+
+
+  <main>
+    <section class="hero">
+      <h1>Find Your Perfect Ride</h1>
+      <p>Affordable car rentals for every journey.</p>
+    </section>
+  
+   
+      <!-- Section2 -->
+
+
+
+      <main class="bg-gray-400">
+        <h2 class="text-center text-white  m-4">Available Cars</h2>
+        <section id="car-list" class=" bg- p-9">
+        
+            
+            <div class="car-card " onclick="showCarDetails('sedan')">
+                <img src="https://images.pexels.com/photos/12353734/pexels-photo-12353734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr" alt="Sedan">
+                <h3>Hyundia</h3>
+                <p>$50/day</p>
+                <p class="text-orange-500">Available</p>
+
+            </div>
+            <div class="car-card" onclick="showCarDetails('suv')">
+                <img src="https://images.pexels.com/photos/29380860/pexels-photo-29380860/free-photo-of-luxury-suv-on-scenic-mountain-road.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SUV">
+                <h3>SUV</h3>
+                <p>$80/day</p>
+                <p>Available</p>
+            </div>
+            <div class="car-card" onclick="showCarDetails('convertible')">
+                <img src="https://via.placeholder.com/150" alt="Convertible">
+                <h3>Convertible</h3>
+                <p>$120/day</p>
+                <p>Available</p>
+            </div>
+        </section>
+
+        <section id="car-details" class="hidden">
+            <h2>Car Details</h2>
+            <div id="car-info"></div>
+            <form id="rental-form">
+                <label for="rental-period">Rental Period (days):</label>
+                <input type="number" id="rental-period" min="1" required>
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" required>
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" required>
+                <button type="submit">Book Now</button>
+               
+            </form> 
+           
+        </section> 
+        
+       
+
+        <section id="cart">
+            <h2 class="font-bold flex items-center justify-center">Your Cart</h2>
+            <div id="cart-summary">
+                <p class="font-bold flex items-center justify-center">No car selected</p>
+            </div>
+            <button  id="checkout-btn" class="hidden">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    
+   <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search" />
+          <button type="submit">Search</button>
+        </form>
+
+  <script src="app.js"></script>
+  
+
+ 
+</body>
+</html>

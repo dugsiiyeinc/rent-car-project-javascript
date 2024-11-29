@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+/* preloader */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  background-color: #1a1a2e;
+  /* color: rgb(240, 12, 12); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  top: 0;
+  position: sticky;
+}
+
+.brand-title {
+  font-size: 1.5em;
+  line-height: 60px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  padding: 0 10px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 60px;
+  display: block;
+}
+
+.navbar-links a:hover {
+  background-color: #444;
+}
+
+/* Toggle Button */
+.toggle-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.container {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+}
+/*  the style of Header section in desktop starts here */
+/* header {
+  top: 0;
+  width: 30%;
+  margin: 0 auto;
+  position: sticky;
+  z-index: 100;
+  height: 10px;
+  color: #fff;
+} */
+
+/* Hero Section */
+.hero {
+  background: url("https://duruthemes.com/demo/html/renax/dark/img/slider/11.jpg")
+    no-repeat center center/cover;
+  color: #1a1a2e;
+
+  text-align: center;
+  padding: 19rem 2rem;
+  height: 100vh;
+  font-weight: 800;
+  z-index: -1;
+  filter: blur(5px) !important;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #e63946;
+}
+
+/* Form Pages */
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f7f7;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #333;
+}
+
+#car-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.car-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+#car-details,
+#cart {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#rental-form {
+  margin-top: 20px;
+}
+
+#rental-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+/* #search-form {
+  display: flex;
+  flex: 1;
+  margin-left: 50px;
+  
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+  margin-bottom: 2;
+}
+
+#search-form button {
+  margin-top: 20px;
+  padding: 2px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  /* background-color: #e62117; */
+
+
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    line-height: 20px;
+  }
+
+  .navbar.active .navbar-links {
+    max-height: 300px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  }
+
+  /* Change the toggle button bars for the open state */
+  .navbar.active .toggle-button .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.active .toggle-button .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar.active .toggle-button .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
