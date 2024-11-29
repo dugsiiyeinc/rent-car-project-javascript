@@ -143,11 +143,14 @@ body {
 
 /* Form Pages */
 .form-page {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f7f7f7;
+  background: url("https://duruthemes.com/demo/html/renax/dark/img/slider/11.jpg")
+    no-repeat center center/cover;
+  color: #1a1a2e;
 }
 
 .form-container {
